@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+/****************/
+/* Flaticon CDN */
+/****************/
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  height:fit-content;
+  background: rgb(255, 255, 255);
+  font-family: "Nunito", sans-serif;
+}
+/*-----------------FOOTER--------------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:100px;
+    background-color:rgb(0, 0, 141);
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    padding:0px;
+}
+footer p{
+    font-family: tt norms;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-right: 60px;
+    
+}
+footer i{
+    font-size: x-large;
+}
+footer ul{
+    display: flex;
+}
+footer ul li a{
+    margin:30px;
+    margin-left: 50px;
+    font-family:tt norms;
+    color:rgb(124, 124, 255);
+    font-size: 15px;
+    font-weight:400px;
+    
+}
+h1 {
+  color: rgb(255, 255, 255) ;
+  padding: 10px;
+}
+h2, h4 {
+    color: blue;
+    text-align: center;
+  }
+p {
+  color: rgba(185, 201, 247, 1) !important;
+}
+.have {
+    color: rgba(185, 201, 247, 1) !important;
+    text-align: center;
+}
+a{
+    font-family: tt norms;
+    text-decoration: none;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background: blue;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: blue;
+    color: blue;
+    bottom: 0px;
+    text-align: center;
+}
+form input {
+  height: 19px !important;
+  padding: 10px !important;
+  outline: none;
+  border: 1px solid rgba(244, 89, 112, .7);
+  color: rgba(55, 0, 255, 0.7);
+  font-family: "Nunito" sans-serif;
+  border-radius: 5px 0 0 5px;
+}
+.btn-submit {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 2px solid #c9c9c9;
+    color:#c9c9c9;
+    font-size: 12ft;
+    font-weight: bolder;
+    margin-top: auto;
+    cursor: pointer;
+}
+form button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgba(244, 89, 112, .7);
+  padding: 12px !important;
+  border-radius: 0 5px 5px 0;
+  height: 41px !important;
+}
+.my-container {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,.3);
+  padding: 25px;
+  margin-top: 25px;
+}
+.my-containermodal {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    padding: 25px;
+    width: 500px;
+  }
+.my-containergambar{
+    background: #fff;
+    padding: 25px;
+  }
+.gambar{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.content {
+  width: 100%;
+  display: flex;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+.col-1 {
+  padding: 20px;
+  width: 40%;
+  padding-top: 50px;
+}
+.col-2 {
+  padding: 5px;
+  width: 60% !important;
+}
+.user-information {
+  position: relative;
+  padding-top: 25px;
+  color: rgba(244, 89, 112, .7);
+}
+.content-book {
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 20px;
+  background: #F8F9FA;
+  padding: 5px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.detail-book {
+  width: 100% !important; 
+  padding: 5px;
+}
+.icons {
+  display: flex;
+  margin-top: 10px;
+  box-sizing: border-box !important;
+}
+.icons > .my-icon {
+  box-sizing: border-box !important;
+  color: rgba(90, 80, 89, 1);
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  width: calc(99% / 3) !important;
+}
+.read-icon, .unread-icon {
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: aliceblue;
+  border-radius: 50%;
+  transition-property: color;
+  transition: .5s ease-out;
+  background: linear-gradient(90deg, rgba(244, 89, 112, .7), rgba(244, 91, 167));
+}
+.read-icon {
+  background: linear-gradient(90deg, rgba(31, 213, 162, 1), rgba(48, 213, 260, 1));
+  transition: .5s ease;
+  opacity: .7;
+}
+.unread-icon {
+  background: linear-gradient(90deg, rgba(255, 173, 26), rgba(253, 132, 69));
+  opacity: .7;
+}
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  background-color: rgba(203, 209, 243, 0.7);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: none;
+  transition: 1s all !important;
+  transition-property: color !important;
+  justify-content: center;
+  align-items: center;
+}
+.modal-open {
+  transition: 1s all !important;
+  transition-property: color !important;
+  display: flex !important;
+}
+#form input {
+  width: 90% !important;
+  border-radius: 10px !important;
+  margin: 12px 0 !important;
+  background: transparent !important;
+}
+.read-button {
+  content: 'READ';
+  padding: 5px;
+  width:fit-content;
+  font-family: Raleway, sans-serif;
+  border-radius: 10px;
+  border: 2px solid #c9c9c9;
+  color:#c9c9c9;
+  font-size: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.read-button:before {
+    content: 'READ';
+}
+.unread-button {
+    content: 'UNREAD';
+    padding: 5px;
+    width:fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 10px;
+    border: 2px solid #c9c9c9;
+    color:#c9c9c9;
+    font-size: 10px;
+    font-weight: bolder;
+    cursor: pointer; 
+}
+.unread-button:before {
+    content: 'UNREAD';
+}
+.trash-book {
+    content: 'DEL';
+    padding: 5px;
+    width:fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 10px;
+    border: 2px solid #c9c9c9;
+    color:#c9c9c9;
+    font-size: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.trash-book:before {
+    content: 'DEL';
+}
+.read-button:hover,
+.unread-button:hover,
+.trash-book:hover,
+.btn-submit:hover {
+  background: #808080;
+  transition:all 0.35s ease-in-out;
+}
+i:hover
+{
+    color:white;
+    transition:all 0.35s ease-in-out;
+}
+
+@media screen and (max-width: 576px) {
+  .content,
+  .content-book {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .unread, 
+  .read {
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .content,
+  .content-book {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .unread, 
+  .read {
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+}

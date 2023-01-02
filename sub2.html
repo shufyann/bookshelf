@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+  <title>Book Shufyan</title>
+  <link rel="stylesheet" href="sub2.css">
+</head>
+
+
+<body>
+  <nav><h1>Ciri.Khas Bookshelf App</h1></nav>
+
+  <div class="content">
+    <!--------------------TAMBAH BUKU-------------------->
+    <div class="col-1">
+      <div class="user-information my-container" id="tambah">
+        <h2>Add Your Happiness!</h2>
+        <p class="have">have a nice day</p>
+        <br>
+        <div id="add-book">
+          <center><input type="submit" value="ADD" name="Submit" class="btn-submit"></center>
+        </div>
+      </div>
+      <!--------------------DAFTAR BUKU-------------------->
+      <div class="content-book">
+        <div class="unread" id="unread">
+          <center><h4>UNREAD</h4></center>
+        </div>
+      </div>
+      <div class="content-book">  
+        <div class="read" id="read">
+        </center><h4>READ</h4></center>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-2">
+      <div class="my-containergambar">
+        <img class="gambar" src="perpus.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!---------------------POPUP ADD BUTTON------------------>
+  <div id="modal">
+    <section class="my-containermodal">
+        <h2>New Book</h2>
+
+        <form id="form">
+            <div class="input-group">
+                <input type="text" id="title" placeholder="Book Title" class="input-form"
+                    maxlength="120" pattern="^[a-zA-Z0-9_ ]*$" required />
+            </div>
+            <div class="input-group">
+                <input type="text" id="author" placeholder="Author" class="input-form"
+                    maxlength="60" pattern="^[a-zA-Z0-9_ ]*$" required />
+            </div>
+            <div class="input-group">
+                <input type="date" id="year" 
+                    class="input-form" min="1900" max="2026" />
+            </div>
+            <div>
+                <button type="reset" class="btn-submit" id="close">Close</button>
+                <button type="submit"class="btn-submit" id="save">Save</button>
+            </div>
+        </form>
+    </section>
+  </div>
+  <footer id="info">
+    <div>
+      <ul>
+          <li><a href="https://www.instagram.com/?hl=id"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/?hl=id&gl=ID"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+  </div>
+  <div class="copyright">
+    <p>Ciri.khas Indonesia | Copyright 2022</p>
+</div>
+  </footer>
+
+  <script src="./storage.js"></script>
+  <script src="./main.js"></script>
+
+</body>
+
+
+</html>
